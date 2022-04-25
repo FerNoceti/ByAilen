@@ -18,13 +18,16 @@ function Navbar(){
             <div className="navbar-container">
                 <div className="navbar-links">
                     <div className="navbar-link">
-                        <a href="#home">Home</a>
+                        <a href="#hola">Hola</a>
                     </div>
                     <div className="navbar-link">
-                        <a href="#about">About</a>
+                        <a href="#servicios">Servicios</a>
                     </div>
                     <div className="navbar-link">
-                        <a href="#contact">Contact</a>
+                        <a href="#trabajos">Trabajos</a>
+                    </div>
+                    <div className="navbar-link">
+                        <a href="#contacto">Contacto</a>
                     </div>
                 </div>
             </div>

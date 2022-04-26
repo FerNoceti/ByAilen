@@ -1,0 +1,47 @@
+.hola {
+    background-color: #eee;
+    color: #000;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hola-container1 {
+    width: 55%;
+    padding-left: 10%;
+}
+
+.hola-container2 {
+    width: 45%;
+}
+
+.hola-title {
+    color: #F31800;
+    width: 100%;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.hola-text {
+    padding: 25px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.hola-negrita {
+    font-weight: bolder;
+    background-color: #DBBEFF;
+    padding: 1px 3px;
+    border-radius: 7px;
+}
+
+.hola-red {
+    color: #F31800;
+    font-weight: 900;
+}
+
+.hola-img {
+    width: 100%;
+}

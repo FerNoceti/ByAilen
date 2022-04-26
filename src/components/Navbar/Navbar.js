@@ -7,12 +7,13 @@ function Navbar(){
         <div className="navbar" id="nav">
             <div className="navbar-container">
                 <div className="navbar-logo">
-                    <img
-                    src='../images/logo.png'
-                    className="navbar-logo-img"
-                    alt="Logo byAlen"
-                    onClick={() => scroll.scrollToTop()}
-                    />
+                    <a href='#'>
+                        <img
+                        src='../images/logo.png'
+                        className="navbar-logo-img"
+                        alt="Logo byAlen"
+                        />
+                    </a>
                 </div>
             </div>
             <div className="navbar-container">

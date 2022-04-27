@@ -1,5 +1,4 @@
 import React from 'react';
-import { animateScroll as scroll } from "react-scroll";
 import './Navbar.css';
 
 function Navbar(){
@@ -7,7 +6,7 @@ function Navbar(){
         <div className="navbar" id="nav">
             <div className="navbar-container">
                 <div className="navbar-logo">
-                    <a href='#'>
+                    <a href='/#'>
                         <img
                         src='../images/logo.png'
                         className="navbar-logo-img"

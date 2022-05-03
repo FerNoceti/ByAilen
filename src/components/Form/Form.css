@@ -1,0 +1,25 @@
+form{
+    margin: 20%;
+}
+form label{
+    font-size: 13px;
+}
+form input{
+    border: white;
+    height: 30px;
+    width: 100%;
+    background-color: #cfcfcf;
+}
+
+.textArea{
+    width: 100%;
+    height: 100px;
+}
+.divGris{
+    background-color: #cfcfcf;
+    width: 100%;
+    margin: 15px 0px;
+}
+.pBlanco{
+    background-color: white;
+}

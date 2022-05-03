@@ -1,0 +1,39 @@
+.contacto{
+    display: flex;
+}
+.izq{
+    width: 30%;
+    margin-left: 20%;
+}
+.izq img{
+    width: 30%;
+    height: 30%;
+}
+.izq h3{
+    color: #a9322b;
+    font-size: 45px;
+    margin-bottom: 15px;
+    margin-left: 15px ;
+}
+
+.red{
+    display: flex;
+}
+.red img{
+    width: 10%;
+    height: 10%;
+    border-radius: 100%;
+    border: red 1px solid;
+    margin: 5px;
+}
+.red p{
+    width: 50px;
+    margin-top: 3%;
+    font-size: 18px;
+    font-weight: 600;
+}
+.formulario{
+    display: block !important;
+    width: 30%;
+    margin-right: 20%;
+}

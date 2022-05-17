@@ -8,7 +8,7 @@ form input{
     border: white;
     height: 30px;
     width: 100%;
-    background-color: #cfcfcf;
+    border-radius: 5px;
 }
 
 .textArea{
@@ -21,5 +21,21 @@ form input{
     margin: 15px 0px;
 }
 .pBlanco{
-    background-color: white;
+    background-color: #dbbeff;
+    color: #87759d;
+    font-weight: 600;
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
+.botones button{
+    color: white;
+    border: 3px solid #d6906b;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+
 }

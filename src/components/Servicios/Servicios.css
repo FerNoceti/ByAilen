@@ -1,0 +1,69 @@
+.servicios{
+    background-color: #dbbeff;
+    overflow: hidden;
+}
+.redondeo{
+    border-top-left-radius: 50% ;
+    border-top-right-radius: 50% ;
+    display: block !important;
+    text-align: center;
+    width: 25%;
+    padding: 3% 0%;
+}
+.redondeo p{
+    font-weight:900;
+    text-align: center;
+    color: white;
+    font-size: 50px !important;
+    margin: 5% 25%;
+    width: 100%;
+}
+.redondeo h3{
+    font-weight:900;
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    margin: 10% 25%;
+    width: 55%;
+}
+/* .redondeo:hover{
+    transform: scaleY(1.1) !important;
+} */
+.servicios img{
+    width: 20%;
+    justify-items: end ;
+}
+.servicios div{
+    display: flex;
+}
+.servicios button{
+    background-color: white;
+    color: #f44e42;
+    font-size: 18px;
+    border: white solid 3px;
+    border-radius: 15px;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+}
+.Explicacion{
+    margin-top: 3%;
+    height: 30%;
+    padding:3% 15% ;
+    justify-content: space-around;
+}
+.servicios span{
+    color: #ec3c50;
+    font-size: 45px;
+    font-weight: bolder;
+
+}
+.servicios p{
+    font-size: 16px;
+    font-weight: bold;
+    width: 50%;
+    padding: 0% 5%;
+}
+.servs{
+    height: 70%;
+}

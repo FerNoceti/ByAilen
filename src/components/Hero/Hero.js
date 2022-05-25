@@ -4,7 +4,7 @@ function Hero() {
     return(
         <section className="hero" id="hero">
             <div className="hero-container">
-                <img src="../images/REBRANDING-BLANCO-AILEN.png" className="hero-img" alt="Logo byAlen" />
+                <img src="../images/HEADER.jpg" className="hero-img" alt="Logo byAlen" />
             </div>
         </section>
     )

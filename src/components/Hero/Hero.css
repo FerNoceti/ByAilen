@@ -2,8 +2,6 @@
     display: flex;
     justify-content: center;
     background-color: #FAAAE5;
-    padding: 20px;
-    min-height: 93vh;
 }
 
 .hero-container {
@@ -14,6 +12,5 @@
 }
 
 .hero-img {
-    width: 80%;
-    max-width: 700px;
+    width: 100%;
 }

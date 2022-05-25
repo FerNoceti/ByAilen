@@ -1,0 +1,18 @@
+.trabajos-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0%;
+    margin: 0%;
+}
+
+.trabajos-item {
+    width: 33.33%;
+}
+
+.trabajos-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

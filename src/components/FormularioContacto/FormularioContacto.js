@@ -3,9 +3,9 @@ import Form from '../Form/Form'
 import './FormularioContacto.css'
 export default function FormularioContacto (){
     const redes = [
-        {id:1,logo:'../images/logo.png' ,nombre:"Instagram"},
-        {id:2,logo:'../images/logo.png' ,nombre:"Telegram"},
-        {id:3,logo:'../images/logo.png' ,nombre:"Gmail"},
+        {id:2,logo:'../images/Icono_lk.png' ,nombre:"byailendamo",redLink:"http://www.linkedin.com/in/ailendamo"},
+        {id:1,logo:'../images/Icono_ig.png' ,nombre:"ailendamo",redLink:"https://www.instagram.com/by.ailendamo/"},
+        {id:3,logo:'../images/Icono_tk.png' ,nombre:"@byailendamo",redLink:"https://www.tiktok.com/@by.ailendamo"},
     ]
 
     return(
@@ -16,12 +16,29 @@ export default function FormularioContacto (){
                 <div className="redes">
                     {redes.map((red)=>{
                         return(
-                            <div key={red.id} className='red'>
-                                <img src={red.logo} alt={red.nombre} />
-                                <p>{red.nombre}</p>
-                            </div>
+                            
+                                <div key={red.id} className='red'>
+                                    <img src={red.logo} alt={red.nombre} />
+                                    <a href={red.redLink} target="blank" className='linkRedes'>
+                                        <p>/{red.nombre}</p>
+                                    </a>
+                                </div>
+                           
                         )
                     })}
+                </div>
+                <div>
+                    <footer>
+                        <div>
+                            <h5>Desarrollo</h5>
+                            <p>reciolaut@gmail.com</p>
+                            <p>fer.j.noceti@gmail.com</p>
+                        </div>
+                        <div>
+                            <h5>Diseño</h5>
+                            <p>sofia.poropat@gmail.com</p>
+                        </div>
+                    </footer>
                 </div>
             </div>
             <div className="formulario">

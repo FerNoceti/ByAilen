@@ -41,14 +41,27 @@ export default function Form(){
                 </div>
                 
                 <div className='divGris'>
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value="ASESORÍAS 1:1">ASESORÍAS 1:1 </option>
+                            <option value="ASESORÍAS GRUPALES">ASESORÍAS GRUPALES </option>
+                            <option value="DISEÑO DE IDENTIDAD DIGITAL">DISEÑO DE IDENTIDAD DIGITAL </option>
+                            <option value="GENERACIÓN DE CONTENIDO PARA MARCAS">GENERACIÓN DE CONTENIDO PARA MARCAS</option>
+
+                        </select>
+                    
+                </div>
+                <div className='divGris'>
                    
                         <input className='textArea' type="text-area" value={mensaje} onChange={mensajeChange}/>
                         <p className='pBlanco'>Mensaje</p>
                     
                 </div>
                 <div className="botones"> 
-                    <button type="submit" style={{backgroundColor: ((expresiones.gmail.test(mail)===false) || (expresiones.nombre.test(apellido)===false) || (expresiones.nombre.test(nombreForm)===false))?"red":"#f36921"}} disabled={((expresiones.gmail.test(mail)===false) || (expresiones.nombre.test(apellido)===false) || (expresiones.nombre.test(nombreForm)===false))} >Consultar</button>
-                    <button type="reset" onClick={()=>reset()}>Limpiar</button>
+                    <button type="submit" style={{
+                        backgroundColor: ((expresiones.gmail.test(mail)===false) || (expresiones.nombre.test(apellido)===false) || (expresiones.nombre.test(nombreForm)===false))?"#ddddddd":"#f36921",
+                        color: ((expresiones.gmail.test(mail)===false) || (expresiones.nombre.test(apellido)===false) || (expresiones.nombre.test(nombreForm)===false))?"black":"white"}}
+                        disabled={((expresiones.gmail.test(mail)===false) || (expresiones.nombre.test(apellido)===false) || (expresiones.nombre.test(nombreForm)===false))}>Consultar</button>
                 </div>
             </form>
         </>

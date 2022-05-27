@@ -4,11 +4,13 @@ form{
 form label{
     font-size: 13px;
 }
-form input{
+form input,select{
     border: white;
     height: 30px;
     width: 100%;
     border-radius: 5px;
+    color: #F36921;
+
 }
 
 .textArea{
@@ -27,15 +29,15 @@ form input{
 }
 .botones{
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
 }
 .botones button{
     color: white;
     border: 3px solid #d6906b;
     border-radius: 10px;
-    width: 100px;
-    height: 40px;
-    font-size: 15px;
+    width: 180px;
+    height: 60px;
+    font-size: 21px;
     font-weight: 600;
-
+    background-color:#F36921 ;
 }

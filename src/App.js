@@ -7,6 +7,7 @@ import Hola from './components/Hola/Hola';
 import Servicios from './components/Servicios/Servicios';
 import Trabajos from './components/Trabajos/Trabajos';
 import Contacto from './components/FormularioContacto/FormularioContacto';
+import Telegram from './components/Telegram/Telegram';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <Servicios />
             <Trabajos />
             <Contacto />
+            <Telegram />
         </div>
     );
 

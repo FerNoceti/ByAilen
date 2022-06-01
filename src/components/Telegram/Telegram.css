@@ -1,0 +1,17 @@
+.telegram {
+    position: sticky;
+    bottom: 7%;
+    left: 90%;
+    width: 100px;
+}
+
+.telegram a img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .telegram {
+        left: 80%;
+        width: 70px;
+    }
+}

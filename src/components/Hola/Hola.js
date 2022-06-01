@@ -4,9 +4,12 @@ function Hola() {
     return(
         <section className="hola" id="hola">
             <div className="hola-container1">
-                <span className="hola-title">
-                    ¡Hola! Bienvenid@
-                </span>
+                <p className="hola-title">
+                    ¡Hola! 😀
+                </p>
+                <p className="hola-subtitle">
+                    Qué gusto verte por acá
+                </p>
                 <p className="hola-text">
                     Mi nombre es Ailen pero también podes llamarme <span className="hola-negrita">Aile</span>, soy técnica en Mkt Digital pero también me
                     capacité en Diseño Digital, Copywriting, Fotografía y video. Desde el año 2017 comencé a incursionar en el mundo de las redes sociales
@@ -20,7 +23,7 @@ function Hola() {
                 </p>
             </div>
             <div className="hola-container2">
-                <img className="hola-img" src="../images/ICONOGRAFIA BYAILEN-04.png" alt="Logo byAlen" />
+                <img className="hola-img" src="../images/HOLA.png" alt="Logo byAlen" />
             </div>
         </section>
     )

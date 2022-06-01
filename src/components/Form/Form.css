@@ -41,3 +41,11 @@ form input,select{
     font-weight: 600;
     background-color:#F36921 ;
 }
+
+@media only screen and (max-width:577px)
+{
+    .botones{
+        display: flex;
+        justify-content: center;
+    }
+}  

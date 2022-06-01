@@ -36,7 +36,7 @@
 .servicios div{
     display: flex;
 }
-.servicios button{
+.servicios button, .servicios button a{
     background-color: white;
     color: #f44e42;
     font-size: 18px;
@@ -46,6 +46,7 @@
     height: 50px;
     font-weight: bold;
     margin-top: 3%;
+    text-decoration:none;
 }
 .Explicacion{
     margin-top: 3%;
@@ -76,3 +77,36 @@
 .servs{
     height: 70%;
 }
+
+/* Viista mobile */
+@media only screen and (max-width:577px)
+{
+    .redondeo{
+        border-top-left-radius: 0% ;
+        border-top-right-radius: 0% ;
+        display: flex !important;
+        text-align: center;
+        width: 100%;
+        padding: 3% 0%;
+    }/* Menu */
+    .servicios div{
+        display: block;
+    }
+    .redondeo p{
+        font-weight:900;
+        text-align: center;
+        color: white;
+        font-size: 50px !important;
+        margin: 0%;
+        width: 100%;
+    }
+    .redondeo h3{
+        font-weight:900;
+        text-align: center;
+        color: white;
+        font-size: 150%;
+        margin: 0%;
+        width: 55%;
+        height: 35%;
+    }
+}   

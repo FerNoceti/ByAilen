@@ -1,0 +1,71 @@
+
+
+
+/* Viista mobile */
+@media only screen and (max-width:577px)
+{
+    .izq{
+        width: 100%;
+        margin: 5% 0%;
+        text-align: center;
+    }
+    .contacto{
+        display: block;
+        padding-top: 5%;
+        background-color: #dbbeff;
+    }
+    
+    
+    .red img{
+        width:70px;
+        height: 70px;
+        border-radius: 100%;
+        opacity: 100%;
+
+    }
+    
+    .redes{
+        display: flex;
+        margin: 0% 10%;
+    }
+    .red{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+    .redes button{
+        background-color: #ffeb70;
+        border-radius: 100%;
+        border: #ffeb70 1px solid;
+        margin-top: 5%;
+        width: 68px;
+        font-weight: 900;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        height: 68px;
+    }
+    .formulario{
+        display: block !important;
+        width: 100%;
+        margin-right: 20%;
+        text-align: left ;
+
+    }
+   
+    footer{
+        margin-top: 10%;
+        display: block;
+        background-color: white;
+        padding: 10%  5%;
+
+    }
+    footer div{
+        text-align: left;
+        width: 100%;
+        margin:5% 0%;
+
+    }
+}   
+ 

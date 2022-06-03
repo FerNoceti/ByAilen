@@ -4,6 +4,8 @@ function ServiciosCelu() {
   
     const [servicioSeleccionado,setServicioSeleccionado]=useState("asesorias")
     const [activado,setActivado]=useState(1)
+    const [pActivado,setPActivado]=useState(false)
+
 
    
     const servicios=[
@@ -16,17 +18,21 @@ function ServiciosCelu() {
         if(serv ===1){
             setServicioSeleccionado("asesorias")
             setActivado(1)
+            setPActivado(true)
         }else if(serv ===2){
             setServicioSeleccionado("asesoriasGrupales")
             setActivado(2)
+            setPActivado(true)
 
         }else if(serv ===3){
             setServicioSeleccionado("diseño")
             setActivado(3)
+            setPActivado(true)
 
         }else {
             setServicioSeleccionado("generacion")
             setActivado(4)
+            setPActivado(true)
 
         }
     }
@@ -36,20 +42,38 @@ function ServiciosCelu() {
                 <span style={{color:servicioSeleccionado === "asesoriasGrupales"?"white":"#ec3c50"}}>Servicios</span>
                 <img src='../images/ICONOGRAFIA BYAILEN-03.png' alt="" />
             </div> 
-                                        <p style={{color:servicioSeleccionado === "asesoriasGrupales"?"white":"black"}}> 
-                                {servicioSeleccionado === "asesorias"? "Este espacio es individual y está diseñado para que tengas tu espacio único donde trabajar tus dudas sobre estrategias, publicidad, redes, diseño o fotografía. Tienen una duración de 1 hora 15 minutos y se agendan con anticipación según disponibilidad en el calendario."
-                            :servicioSeleccionado === "asesoriasGrupales"?"Este espacio es grupal para 5 personas y está diseñado para abordar dudas generales sobre estrategias, publicidad, redes, diseño o fotografía. Tienen una duración de 1 hora 15 minutos y las fechas se notifican en mis redes sociales."
-                            :servicioSeleccionado === "diseño"?"Se trabaja toda la Identidad Visual de la marca desde cero (Logotipo, paleta de colores, patterns, tarjetas, recursos gráficos) comenzando por desarrollar un brief en base a un formulario o previa reunión via zoom. Los presupuestos son personalizados para cada cliente. "
-                            :"Genero contenido para marcas ya sea desde grabar y editar videos o fotos, hasta redactar los copys con la posibilidad de asistir a los locales (que se encuentren en CABA) también puedo brindar asesorías en los locales para sus empleados sobre la generación de los contenidos, ya sea para Tik tok o Instagram. "}</p>
-            
+                                        
             */}
             <div className="servs">
                 {servicios.map((servicio)=>{
                     return(
-                        <div className="redondeo" key={servicio.id} style={{backgroundColor: servicio.color}}>
-                            <h3>{servicio.titulo}</h3>
-                            <p onClick={()=>cambioDeServicios(servicio.id)} style={{color:"white"}}>{servicio.id === activado? "^":"v" }</p>
-                            <button><a href="#contacto">Solicitar</a></button>
+                        <div className={activado !== servicio.id?("redondeo"):("Block")} key={servicio.id} style={{backgroundColor: servicio.color}}>
+                            {activado !== servicio.id?(
+                                <>
+                                    <h2>{servicio.titulo}</h2>
+                                    <p onClick={()=>cambioDeServicios(servicio.id)} style={{color:"white"}}>{servicio.id === activado? "^":"v" }</p>
+                                </>
+                                
+                                ):(
+                                <>
+                                    <p onClick={()=>cambioDeServicios(servicio.id)} style={{color:"white"}}>{servicio.id === activado? "^":"v" }</p>
+                                    <h2>{servicio.titulo}</h2>
+                                </>
+                                )
+                            }
+                            {activado === servicio.id?(
+                                <p className="parrafoCelu" style={{color:servicioSeleccionado === "asesorias"?"#8b74a5":"white"}}> 
+                                {servicioSeleccionado === "asesorias"? "Este espacio es individual y está diseñado para que tengas tu espacio único donde trabajar tus dudas sobre estrategias, publicidad, redes, diseño o fotografía. Tienen una duración de 1 hora 15 minutos y se agendan con anticipación según disponibilidad en el calendario."
+                            :servicioSeleccionado === "asesoriasGrupales"?"Este espacio es grupal para 5 personas y está diseñado para abordar dudas generales sobre estrategias, publicidad, redes, diseño o fotografía. Tienen una duración de 1 hora 15 minutos y las fechas se notifican en mis redes sociales."
+                            :servicioSeleccionado === "diseño"?"Se trabaja toda la Identidad Visual de la marca desde cero (Logotipo, paleta de colores, patterns, tarjetas, recursos gráficos) comenzando por desarrollar un brief en base a un formulario o previa reunión via zoom. Los presupuestos son personalizados para cada cliente. "
+                            :"Genero contenido para marcas ya sea desde grabar y editar videos o fotos, hasta redactar los copys con la posibilidad de asistir a los locales (que se encuentren en CABA) también puedo brindar asesorías en los locales para sus empleados sobre la generación de los contenidos, ya sea para Tik tok o Instagram. "}</p>
+                            ):(<></>)
+                            }
+                            {activado === servicio.id?(
+                                <button><a href="#contacto">Solicitar</a></button>
+
+                                ):(<></>)
+                            }
                         </div>
                         
                     )

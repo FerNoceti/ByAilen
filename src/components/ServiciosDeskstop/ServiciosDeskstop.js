@@ -47,7 +47,7 @@ function ServiciosDeskstop() {
                     return(
                         <div className="redondeo" key={servicio.id} style={{backgroundColor: servicio.color}}>
                             <p style={{color:"white"}}>{servicio.id === activado? "^":"v" }</p>
-                            <h3>{servicio.titulo}</h3>
+                            <h2>{servicio.titulo}</h2>
                             <button style={{opacity: servicio.id === activado? 0:100 }} onClick={()=>cambioDeServicios(servicio.id)}>Consultar</button>
                         </div>
                     )

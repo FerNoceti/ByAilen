@@ -1,0 +1,65 @@
+.contacto{
+    display: flex;
+    padding-top: 5%;
+    background-color: #dbbeff;
+}
+.izq{
+    width: 30%;
+    margin-left: 20%;
+}
+.izq img{
+    width: 35%;
+    height: 30%;
+}
+.izq h3{
+    color: #a9322b;
+    font-size: 45px;
+    margin-bottom: 15px;
+    margin-left: 15px ;
+}
+
+.red{
+    display: flex;
+}
+.red a{
+    text-decoration: none;
+    color: white;
+    margin-top: 3%;
+
+}
+.red img{
+    width:72px;
+    height: 72px;
+    border-radius: 100%;
+    margin: 5px;
+}
+.red p{
+    
+    width: auto;
+    margin-top: 3%;
+    font-size: 25px;
+    font-weight: 600;
+    color: #8b74a5;
+}
+.formulario{
+    display: block !important;
+    width: 30%;
+    margin-right: 20%;
+}
+footer{
+    margin-top: 10%;
+    display: flex;
+
+}
+footer div{
+    width: 50%;
+
+}
+footer h5{
+    color:#d6906b
+}
+footer p{
+    color:#87759d;
+}
+
+

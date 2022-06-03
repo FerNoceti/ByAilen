@@ -48,4 +48,12 @@ form input,select{
         display: flex;
         justify-content: center;
     }
+    form input,select{
+        border: white;
+        height: 35px;
+        width: 100%;
+        border-radius: 5px;
+        color: #F36921;
+    
+    }
 }  

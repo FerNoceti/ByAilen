@@ -9,6 +9,7 @@
     top: 0;
     width: 100%;
     z-index: 1;
+    font-weight: bolder;
 }
 
 .navbar-logoD {
@@ -39,7 +40,7 @@
 .navbar-link a {
     text-decoration: none;
     color: #000;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 900;
 }
 
@@ -69,7 +70,6 @@
     }
 
     .navbar-logo-imgM{
-        width: 100%;
         height: 80px;
     }
 

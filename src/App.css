@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'GillSansDisplayMTPro-BdCn';
+    src: url('../public/font/GillSansDisplayMTPro-BdCn.otf') ;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
 *{
+    /*font-family: 'GillSansDisplayMTPro-BdCn';*/
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
     margin: 0;
@@ -11,9 +17,9 @@ html {
 }
 
 section[id]{
-    scroll-margin-top: 79px;
+    scroll-margin-top: 80px;
 }
 
 .App{
-    padding-top: 80px;
+    padding: 80px 0 0 0;
 }

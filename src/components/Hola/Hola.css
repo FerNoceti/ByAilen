@@ -2,15 +2,14 @@
     background-color: #eee;
     color: #000;
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 0 0 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .hola-container1 {
     width: 55%;
     padding-left: 10%;
+    padding-top: 50px;
 }
 
 .hola-container2 {
@@ -34,11 +33,11 @@
 .hola-text {
     padding: 25px 0;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .hola-negrita {
-    font-weight: bolder;
+    font-weight:  900;
     background-color: #DBBEFF;
     padding: 1px 3px;
     border-radius: 7px;
@@ -67,6 +66,7 @@
         width: 90%;
         background-color: #DBBEFF;
         border-radius: 300px 300px 0 0;
+        padding-top: 20px;
     }
 
     .hola-title {

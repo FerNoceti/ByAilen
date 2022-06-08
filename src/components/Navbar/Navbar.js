@@ -25,16 +25,16 @@ function Navbar(){
                 </div>
                 <div className="navbar-links">
                     <div className="navbar-link">
-                        <a href="#hola">Hola</a>
+                        <a href="#hola">¡HOLA!</a>
                     </div>
                     <div className="navbar-link">
-                        <a href="#servicios">Servicios</a>
+                        <a href="#servicios">SERVICIOS</a>
                     </div>
                     <div className="navbar-link">
-                        <a href="#trabajos">Trabajos</a>
+                        <a href="#trabajos">TRABAJOS</a>
                     </div>
                     <div className="navbar-link">
-                        <a href="#contacto">Contacto</a>
+                        <a href="#contacto">CONTACTO</a>
                     </div>
                 </div>
             </div>

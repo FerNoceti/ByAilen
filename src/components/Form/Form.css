@@ -4,7 +4,56 @@ form{
 form label{
     font-size: 13px;
 }
-form input,select{
+form ul {
+    display: block;
+    border: white;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: white;
+    
+}
+form ul li ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding-top: 15px;
+    padding-left: 0px;
+    border-radius: 5px;
+    width: 18%;
+    height: 10%;
+}
+form ul li {
+    background-color: white
+   
+}
+form ul li ul li {
+    display: flex;
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px;
+}
+form ul li ul li p{
+    width: 100%;
+    font-size: 15px;
+    background-color: white;
+
+}
+form ul li:hover > ul{
+  display:block ;
+  background-color: white;
+
+}
+form ul li ul li input{
+    width: 10%;
+    height: 20px;
+
+}
+
+form input{
     border: white;
     height: 30px;
     width: 100%;
@@ -33,7 +82,7 @@ form input,select{
 }
 .botones button{
     color: white;
-    border: 3px solid #d6906b;
+    border: 3px solid #F36921;
     border-radius: 10px;
     width: 180px;
     height: 60px;
@@ -56,4 +105,21 @@ form input,select{
         color: #F36921;
     
     }
+
+    form ul li ul{
+        display: none;
+        position: absolute;
+        background-color: white;
+        list-style: none;
+        padding-top: 15px;
+        padding-left: 0px;
+        border-radius: 5px;
+        width: 50%;
+        height: 10%;
+    }
+    form ul li ul li{
+        
+    height: 75%;
+    }
+
 }  

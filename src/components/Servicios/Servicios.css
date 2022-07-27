@@ -22,17 +22,15 @@
     text-align: center;
     color: white;
     font-size: 200%;
-    margin: 10% 25%;
+    margin: 10% 22%;
     width: 55%;
     height: 35%;
 }
 /* .redondeo:hover{
     height:100 !important;
 } */
-.servicios img{
-    width: 20%;
-    justify-items: end ;
-}
+
+
 .servicios div{
     display: flex;
 }
@@ -67,15 +65,48 @@
     font-weight: bolder;
 
 }
+
 .servicios p{
     font-size: 21px;
     font-weight: bold;
-    width: 50%;
-    padding: 0% 5%;
+    width: 80%;
+    padding: 0% 2%;
     color: #8b74a5;
 }
+.redondeo p{
+    font-size: 50px;
+    font-weight: bold;
+    width: 50%;
+    padding: 0% 5%;
+    margin-top: 0;
+}
+
 .servs{
     height: 70%;
+}
+.trabajos-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trabajos-animation2 {
+    position: absolute;
+    right: -7%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.trabajos-animation-img {
+    animation: rotation 10s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 /* Viista mobile */

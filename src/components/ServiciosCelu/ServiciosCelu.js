@@ -12,7 +12,7 @@ function ServiciosCelu() {
         {id:1,titulo:"ASESORÍAS 1:1",color:"#dbbeff"},
         {id:2,titulo:"ASESORÍAS GRUPALES",color:"#f36921"},
         {id:3,titulo:"DISEÑO DE IDENTIDAD DIGITAL ",color:"#fcdb38"},
-        {id:4,titulo:"GENERACIÓN DE CONTENIDO PARA MARCAS",color:"#faaae5"},
+        {id:4,titulo:"GENERACIÓN DE MARCAS",color:"#faaae5"},
     ]
     function cambioDeServicios(serv){
         if(serv ===1){
@@ -50,7 +50,7 @@ function ServiciosCelu() {
                         <div className={activado !== servicio.id?("redondeo"):("Block")} key={servicio.id} style={{backgroundColor: servicio.color}}>
                             {activado !== servicio.id?(
                                 <>
-                                    <h2>{servicio.titulo}</h2>
+                                    <b> <h2>{servicio.titulo}</h2></b>
                                     <p onClick={()=>cambioDeServicios(servicio.id)} style={{color:"white"}}>{servicio.id === activado? "^":"v" }</p>
                                 </>
                                 
